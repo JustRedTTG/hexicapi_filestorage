@@ -1,8 +1,11 @@
 import os
 import time
+import socket
 from hashlib import sha256
 from hexicapi import server
 
+hostname = socket.gethostname()
+server.ip = socket.gethostbyname(hostname)
 server.port = 1234
 
 def get_folder(C: server.Iden):

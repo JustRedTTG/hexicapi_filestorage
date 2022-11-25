@@ -2,6 +2,7 @@ import os.path
 import atexit
 from hexicapi import client
 
+client.ip = input('ip: ')
 client.port = 1234
 client.basic_on_calf()
 
